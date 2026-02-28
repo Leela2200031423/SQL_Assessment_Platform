@@ -1,0 +1,53 @@
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0 40px;
+}
+
+.navbar-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-signin {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #f3f4f6;
+  color: #1f2937;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.btn-signin:hover {
+  background: #e5e7eb;
+}
+

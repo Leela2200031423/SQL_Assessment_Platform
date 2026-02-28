@@ -1,0 +1,289 @@
+/* playground.css */
+
+.playground-layout {
+    min-height: 100vh;
+    background-color: #f9fafb;
+}
+
+/* User Assessments Grid Layout */
+.assessments-student-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.student-assessments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+.student-assessment-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-assessment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.student-assessment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.student-assessment-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.student-assessment-desc {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 0 24px 0;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.btn-start-assignment {
+    width: 100%;
+    background-color: #0d9488;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-start-assignment:hover {
+    background-color: #0f766e;
+}
+
+
+/* IDE Layout */
+.playground-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 32px;
+}
+
+.playground-header-actions {
+    margin-bottom: 24px;
+}
+
+.btn-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-back:hover {
+    color: #374151;
+}
+
+.ide-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ide-top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.ide-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 24px;
+}
+
+.ide-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* Schema Table formatting inside IDE */
+.ide-schema-card {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.schema-table-wrapper {
+    margin-bottom: 24px;
+}
+
+.schema-table-wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.schema-table-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 12px;
+}
+
+.schema-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.schema-table th,
+.schema-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.schema-table th {
+    background-color: #f9fafb;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.schema-table td {
+    color: #374151;
+}
+
+.no-schema-text {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Editor CSS */
+.ide-editor-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.sql-textarea {
+    width: 100%;
+    min-height: 200px;
+    background-color: #1f2937;
+    color: #f9fafb;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    resize: vertical;
+    margin-bottom: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.sql-textarea:focus {
+    box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.5);
+}
+
+.editor-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-execute {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0d9488;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-execute:hover {
+    background-color: #0f766e;
+}
+
+.btn-hint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    color: #374151;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-hint:hover {
+    background-color: #f9fafb;
+}
+
+/* Banners */
+.hint-banner {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.hint-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #065f46;
+    margin-bottom: 8px;
+}
+
+.hint-banner p {
+    color: #065f46;
+    margin: 0;
+    font-size: 14px;
+}
+
+.feedback-banner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid;
+    font-size: 14px;
+}
+
+.feedback-banner.success {
+    background-color: #ecfdf5;
+    border-color: #a7f3d0;
+    color: #065f46;
+}
+
+.feedback-banner.error {
+    background-color: #fef2f2;
+    border-color: #fecaca;
+    color: #991b1b;
+}
